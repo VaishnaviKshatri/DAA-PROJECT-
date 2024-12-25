@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City AAROHAN</title>
+    <style>
+        body {
+            background-color: #292929;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .subtitle {
+            display: block;
+            margin-left: 5em;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: black;
+            border-radius: 5px;
+            background-color: #061ab7;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0c0024;
+        }
+        #content {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: none;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            border: 1px solid #040000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #3d3d3d;
+        }
+    </style>
+    <script>
+        function showIntroduction() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <h3>Introduction</h3>
+                <p><strong>Name:</strong> Bhagyashree.D.Y</p>
+                <p><strong>Roll no:</strong> 327</p>
+                <p><strong>USN:</strong> 01FE23BCS144</p>S
+                <p><strong>Division:</strong> C</p>
+                <p><strong>Business cases:</strong></p>
+                <ul>
+                    <li>Transportation</li>
+                    <li>Tourism</li>
+                    <li>Industries</li>
+                    <li>Wind mills</li>
+                </ul>
+            `;
+            content.style.display = 'block';
+        }
+
+        function showSDGMapping() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <h3>SDG Mapping</h3>
+                <h4>1. Transportation</h4>
+                <ul>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.1.1: Proportion of rural population living within 2 km of an all-season road</li>
+                    <li>9.4.1: CO₂ emissions per unit of GDP (by sector, including transport)</li>
+                    <li><strong>SDG 11:</strong> Sustainable Cities and Communities</li>
+                    <li>11.2.1: Proportion of population with access to public transport by age, sex, and persons with disabilities</li>
+                    <li><strong>SDG 13:</strong> Climate Action</li>
+                    <li>13.2.2: Total greenhouse gas emissions per year by transport and energy sectors</li>
+                </ul>
+                <h4>2. Tourism</h4>
+                <ul>
+                    <li><strong>SDG 8:</strong> Decent Work and Economic Growth</li>
+                    <li>8.9.1: Tourism direct GDP as a proportion of total GDP and in growth rate</li>
+                    <li>8.9.2: Number of jobs in sustainable tourism industries</li>
+                    <li><strong>SDG 12:</strong> Responsible Consumption and Production</li>
+                    <li>12.b.1: Implementation of sustainable tourism policies and plans with monitoring tools</li>
+                    <li><strong>SDG 11:</strong> Sustainable Cities and Communities</li>
+                    <li>11.4.1: Expenditure on cultural and natural heritage as a proportion of total GDP</li>
+                </ul>
+                <h4>3. Industries</h4>
+                <ul>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.2.1: Manufacturing value added as a proportion of GDP</li>
+                    <li>9.4.1: CO₂ emissions per unit of value added (for industries)</li>
+                    <li><strong>SDG 12:</strong> Responsible Consumption and Production</li>
+                    <li>12.5.1: National recycling rate and tons of material recycled</li>
+                    <li><strong>SDG 7:</strong> Affordable and Clean Energy</li>
+                    <li>7.3.1: Energy intensity measured in terms of primary energy and GDP</li>
+                </ul>
+                <h4>4. Wind Energy</h4>
+                <ul>
+                    <li><strong>SDG 7:</strong> Affordable and Clean Energy</li>
+                    <li>7.2.1: Renewable energy share in the total final energy consumption</li>
+                    <li>7.b.1: Investment in renewable energy as a proportion of GDP</li>
+                    <li><strong>SDG 13:</strong> Climate Action</li>
+                    <li>13.1.3: Number of countries integrating climate change mitigation policies</li>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.b.1: Proportion of medium and high-tech industry value added in total industry value added</li>
+                </ul>
+            `;
+            content.style.display = 'block';
+        }
+
+        function showTransportation() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                `;
+            content.style.display = 'block';
+        }
+
+
+
+        
+
+        function showBusinessCases() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>Business Cases</h3>
+        <h4>Green Industries and Manufacturing</h4>
+        <p>Transitioning industries to energy-efficient operations and adopting renewable energy sources while promoting a circular economy.</p>
+        <h4>Wind Energy Development</h4>
+        <p>Utilizing wind farms to generate clean energy, reducing dependency on fossil fuels and providing sustainable power to the city.</p>
+        <h4>Sustainable Tourism Development</h4>
+        <p>Promoting eco-tourism by integrating technology, preserving local culture, and ensuring minimal environmental impact to attract and engage tourists.</p>
+        <h4>Smart Transportation Solutions</h4>
+        <p>Enhancing urban mobility through electric vehicles, public transport optimization, and intelligent traffic systems for efficient and sustainable travel.</p>
+    `;
+    content.style.display = 'block';
+}
+
+        function showSDGMapping() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <h3>SDG Mapping</h3>
+                <h4>1. Transportation</h4>
+                <ul>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.1.1: Proportion of rural population living within 2 km of an all-season road</li>
+                    <li>9.4.1: CO₂ emissions per unit of GDP (by sector, including transport)</li>
+                    <li><strong>SDG 11:</strong> Sustainable Cities and Communities</li>
+                    <li>11.2.1: Proportion of population with access to public transport by age, sex, and persons with disabilities</li>
+                    <li><strong>SDG 13:</strong> Climate Action</li>
+                    <li>13.2.2: Total greenhouse gas emissions per year by transport and energy sectors</li>
+                </ul>
+                <h4>2. Tourism</h4>
+                <ul>
+                    <li><strong>SDG 8:</strong> Decent Work and Economic Growth</li>
+                    <li>8.9.1: Tourism direct GDP as a proportion of total GDP and in growth rate</li>
+                    <li>8.9.2: Number of jobs in sustainable tourism industries</li>
+                    <li><strong>SDG 12:</strong> Responsible Consumption and Production</li>
+                    <li>12.b.1: Implementation of sustainable tourism policies and plans with monitoring tools</li>
+                    <li><strong>SDG 11:</strong> Sustainable Cities and Communities</li>
+                    <li>11.4.1: Expenditure on cultural and natural heritage as a proportion of total GDP</li>
+                </ul>
+                <h4>3. Industries</h4>
+                <ul>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.2.1: Manufacturing value added as a proportion of GDP</li>
+                    <li>9.4.1: CO₂ emissions per unit of value added (for industries)</li>
+                    <li><strong>SDG 12:</strong> Responsible Consumption and Production</li>
+                    <li>12.5.1: National recycling rate and tons of material recycled</li>
+                    <li><strong>SDG 7:</strong> Affordable and Clean Energy</li>
+                    <li>7.3.1: Energy intensity measured in terms of primary energy and GDP</li>
+                </ul>
+                <h4>4. Wind Energy</h4>
+                <ul>
+                    <li><strong>SDG 7:</strong> Affordable and Clean Energy</li>
+                    <li>7.2.1: Renewable energy share in the total final energy consumption</li>
+                    <li>7.b.1: Investment in renewable energy as a proportion of GDP</li>
+                    <li><strong>SDG 13:</strong> Climate Action</li>
+                    <li>13.1.3: Number of countries integrating climate change mitigation policies</li>
+                    <li><strong>SDG 9:</strong> Industry, Innovation, and Infrastructure</li>
+                    <li>9.b.1: Proportion of medium and high-tech industry value added in total industry value added</li>
+                </ul>
+            `;
+            content.style.display = 'block';
+        }
+
+
+function showCodeImplementation() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>Code Implementation for Smart City Domains</h3>
+        <h4>1. Transportation</h4>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong> Find the shortest route between two points in a city's transportation network.</li>
+            <li><strong>Kruskal's Algorithm:</strong> Design an efficient road network by finding the minimum spanning tree of connected intersections.</li>
+            <li><strong>BFS/DFS:</strong> Traverse through routes to detect congested areas or alternate paths.</li>
+            <li><strong>Heap:</strong> Manage priority queues for traffic signal optimization and emergency vehicle routing.</li>
+            <li><strong>Union-Find (Disjoint Sets):</strong> Track connected roads and highways to monitor accessibility during maintenance or natural disasters.</li>
+        </ul>
+        <h4>2. Tourism</h4>
+        <ul>
+            <li><strong>N-Queen Problem:</strong> Place tourist information centers strategically to avoid overlapping services.</li>
+            <li><strong>Subset Generation:</strong> Create customizable travel packages for visitors.</li>
+            <li><strong>Knuth-Morris-Pratt (KMP):</strong> Search and recommend travel itineraries based on user preferences.</li>
+            <li><strong>Rabin-Karp:</strong> Validate and verify ticket IDs or booking references.</li>
+            <li><strong>Floyd-Warshall Algorithm:</strong> Find all-pairs shortest paths to suggest optimal routes between attractions.</li>
+            <li><strong>DFS:</strong> Explore tourist destinations in a depth-first manner for package creation.</li>
+        </ul>
+        <h4>3. Industries</h4>
+        <ul>
+            <li><strong>HashMaps:</strong> Efficiently store and retrieve industry data, such as factory locations, resources, and outputs.</li>
+            <li><strong>Quick Sort/Merge Sort:</strong> Rank industries based on output, energy consumption, or sustainability practices.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Analyze industrial supply chains and calculate delivery costs with negative weights.</li>
+            <li><strong>Kruskal's Algorithm:</strong> Build optimized industrial zones with cost-effective infrastructure.</li>
+        </ul>
+        <h4>4. Windmills</h4>
+        <ul>
+            <li><strong>Segment Trees:</strong> Monitor real-time energy production across different windmill clusters and detect anomalies.</li>
+            <li><strong>Heap:</strong> Allocate energy to sectors based on priority during peak demand.</li>
+            <li><strong>Union-Find:</strong> Manage connectivity between windmill units and power grids.</li>
+        </ul>
+        <p>Implemented Codes:</p>
+        <ul>
+            <li><a href="./DFS.md">DFS traversal code</a></li>
+            <li><a href="./BFS.md">BFS traversal code</a></li>
+            <li><a href="./Merge.md">Merge sort</a></li>
+            <li><a href="./Dijekstras.md">Dijkstra's code</a></li>
+            <li><a href="./Kruskal.md">Kruskal's code</a></li>
+            <li><a href="./Heap.md">Heap</a></li>
+        </ul>
+    `;
+    content.style.display = 'block';
+}
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Welcome to Smart City AAROHAN</h1>
+    <h2 class="subtitle">The city of Ascendry...</h2>
+
+    <div id="content"></div>
+<div class="button-container">
+    <button onclick="showIntroduction()">Introduction</button>
+    <button onclick="showSDGMapping()">SDG Mapping</button>
+    <button onclick="showBusinessCases()">Business Cases</button>
+    <button onclick="showCodeImplementation()">code implementation</button>
+</div>
+
+</body>
+</html>
