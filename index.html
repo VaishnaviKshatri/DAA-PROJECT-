@@ -555,9 +555,15 @@ return 0;
         }
         function showcourseReflection() {
     const content = document.getElementById('content');
+    
+    if (!content) {
+        console.error('Content element not found!');
+        return;
+    }
+
     content.innerHTML = `
         <h3>Course Reflection</h3>
-        
+
         <h4>1. What kind of problems do we see in nature?</h4>
         <ul>
             <li><strong>Iteration:</strong> Repeating a process or a set of steps until something specific happens. Examples in nature include the predator-prey cycle or the changing seasons.</li>
@@ -642,6 +648,8 @@ return 0;
     `;
     content.style.display = 'block';
 }
+
+
 function showImplementation(){
             const content = document.getElementById('content');
              content.innerHTML = `
@@ -1134,7 +1142,7 @@ function showphase(){
        `;
       content.style.display = 'block';
         }
-  
+        
     </script>
 </head>
 <body>
@@ -1148,7 +1156,7 @@ function showphase(){
         <button onclick="showCodeImplementation()">Code Implementation</button>
         <button onclick="showImplementation()">Implementation analysis</button>
         <button onclick="showphase()">Computational table</button>
-       <a href="https://vaishnavikshatri.github.io/DAA-PROJECT-/15QUESTIONDAA1.docx" target="_blank" class="button">Sample Implementation</a>
+
     </div>
     <div id="content"></div>
 </body>
